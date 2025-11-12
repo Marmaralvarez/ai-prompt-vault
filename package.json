@@ -9,6 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "validate": "ts-node -O '{\"module\":\"commonjs\"}' tools/scripts/validate-prompts.ts",
+    "validate:docs": "ts-node -O '{\"module\":\"commonjs\"}' tools/scripts/validate-docs.ts",
     "export:all": "ts-node -O '{\"module\":\"commonjs\"}' tools/scripts/export-all.ts",
     "analytics": "ts-node -O '{\"module\":\"commonjs\"}' tools/scripts/analytics.ts",
     "health-check": "ts-node -O '{\"module\":\"commonjs\"}' tools/scripts/health-check.ts",

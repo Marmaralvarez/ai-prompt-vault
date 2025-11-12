@@ -1,0 +1,162 @@
+{
+  "timestamp": "2025-11-12T16:55:26.849Z",
+  "totalFiles": 14,
+  "existingFiles": 13,
+  "missingFiles": [],
+  "totalSize": 79038,
+  "allChecksPassed": true,
+  "details": [
+    {
+      "file": "docs/guides/getting-started.md",
+      "exists": true,
+      "size": 6662,
+      "hasContent": true,
+      "sections": [
+        "Getting Started",
+        "Quick Navigation",
+        "Browse by Type",
+        "Find Prompts by Difficulty",
+        "Finding What You Need"
+      ]
+    },
+    {
+      "file": "docs/guides/prompt-anatomy.md",
+      "exists": true,
+      "size": 11016,
+      "hasContent": true,
+      "sections": [
+        "Prompt Anatomy",
+        "Core Components",
+        "1. Role Definition",
+        "Role",
+        "2. Task Definition"
+      ]
+    },
+    {
+      "file": "docs/guides/platform-integration.md",
+      "exists": true,
+      "size": 11130,
+      "hasContent": true,
+      "sections": [
+        "Platform Integration",
+        "Claude Platforms",
+        "Claude Web Interface",
+        "Claude Projects",
+        "Export prompts to Claude format"
+      ]
+    },
+    {
+      "file": "docs/guides/tagging-strategy.md",
+      "exists": true,
+      "size": 9256,
+      "hasContent": true,
+      "sections": [
+        "Tagging Strategy",
+        "Overview",
+        "Core Tag Categories",
+        "1. Skill/Domain Tags",
+        "2. Technology/Framework Tags"
+      ]
+    },
+    {
+      "file": "docs/guides/version-management.md",
+      "exists": true,
+      "size": 11023,
+      "hasContent": true,
+      "sections": [
+        "Version Management",
+        "Semantic Versioning",
+        "Version Levels",
+        "Patch Releases (1.0.0 → 1.0.1)",
+        "Minor Releases (1.0.0 → 1.1.0)"
+      ]
+    },
+    {
+      "file": "docs/guides/prompt-submission.md",
+      "exists": true,
+      "size": 8550,
+      "hasContent": true,
+      "sections": [
+        "Prompt Submission Workflow",
+        "Overview",
+        "Prerequisites",
+        "Step-by-Step Submission Process",
+        "Step 1: Prepare Your Environment"
+      ]
+    },
+    {
+      "file": "docs/guides/deployment.md",
+      "exists": true,
+      "size": 8908,
+      "hasContent": true,
+      "sections": [
+        "Deployment Guide",
+        "Pre-Deployment Checklist",
+        "Local Development",
+        "Quick Start",
+        "Install dependencies"
+      ]
+    },
+    {
+      "file": "docs/guides/local-setup.md",
+      "exists": true,
+      "size": 7928,
+      "hasContent": true,
+      "sections": [
+        "Local Development Environment Setup",
+        "System Requirements",
+        "Minimum",
+        "Recommended",
+        "Installation Steps"
+      ]
+    },
+    {
+      "file": "README.md",
+      "exists": true,
+      "size": 810,
+      "hasContent": true,
+      "sections": [
+        "AI Prompt Library & Documentation Vault",
+        "Quick Start",
+        "Project Structure",
+        "Available Scripts",
+        "Documentation"
+      ]
+    },
+    {
+      "file": "CONTRIBUTING.md",
+      "exists": false,
+      "size": 0,
+      "hasContent": false,
+      "sections": []
+    },
+    {
+      "file": "package.json",
+      "exists": true,
+      "size": 1617,
+      "hasContent": true,
+      "sections": []
+    },
+    {
+      "file": "tsconfig.json",
+      "exists": true,
+      "size": 930,
+      "hasContent": true,
+      "sections": []
+    },
+    {
+      "file": "fumadocs.config.ts",
+      "exists": true,
+      "size": 186,
+      "hasContent": true,
+      "sections": []
+    },
+    {
+      "file": "next.config.mjs",
+      "exists": true,
+      "size": 1022,
+      "hasContent": true,
+      "sections": []
+    }
+  ]
+}
