@@ -1,0 +1,284 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║  🚀 AI PROMPT LIBRARY & DOCUMENTATION VAULT - CLAUDE CODE INSTRUCTIONS      ║
+║                                                                              ║
+║  Complete, production-ready instruction set for building a self-hosted      ║
+║  AI Prompt Library using Fumadocs with full-text search and multi-platform  ║
+║  exports (Claude, ChatGPT, Raycast, CSV, Markdown)                         ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📂 ALL FILES LOCATION: /Users/mariamartin/Documents/Development/ai-prompt-vault
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ YOU HAVE RECEIVED 9 COMPREHENSIVE INSTRUCTION FILES:
+
+1. 📖 README.md (12 KB) - START HERE!
+   └─ Overview of all files and how to use them
+
+2. 📋 INDEX.md (13 KB) - READ SECOND
+   └─ Complete index with file references and quick lookup
+
+3. ⭐ claude.md (14 KB) - READ THIRD (MAIN FILE)
+   └─ Project orchestration and phase overview
+
+4. 🔧 SETUP.md (10 KB) - PHASE 1
+   └─ Initialize Fumadocs and create project structure
+
+5. ⚙️ CONFIG.md (22 KB) - PHASE 2
+   └─ Configure Fumadocs, Next.js, and validation schemas
+
+6. 📤 SCRIPTS.md (35 KB) - PHASE 3 (MOST DETAILED)
+   └─ Build multi-platform export pipeline
+
+7. 📚 TEMPLATES.md (in SCRIPTS.md) - PHASE 4
+   └─ Create documentation and example prompts
+
+8. 🧪 TESTING.md (16 KB) - PHASE 6
+   └─ Comprehensive testing and quality assurance
+
+9. 🚀 DEPLOYMENT.md (19 KB) - PHASE 7
+   └─ Deploy to production with multiple options
+
+10. 📊 PROJECT_SUMMARY.md (8 KB) - QUICK REFERENCE
+    └─ One-page overview and command reference
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📊 SUMMARY STATISTICS:
+
+Total Files:        9 instruction files
+Total Size:         ~150 KB
+Total Duration:     ~26 hours
+Recommended Pace:   1 phase per session (1-5 hours each)
+Tech Stack:         Fumadocs, NextJS 14+, TypeScript, Zod
+No External APIs:   100% self-contained
+Production Ready:   Yes, with deployment options
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 QUICK START:
+
+1. Read: README.md (overview)
+2. Read: INDEX.md (file reference)
+3. Read: claude.md (project details)
+4. Start: SETUP.md (Phase 1)
+5. Execute: Commands step-by-step
+6. Report: Status using provided format
+7. Continue: Next phase
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📖 READING ORDER:
+
+First Session (30 min):
+  └─ README.md → INDEX.md → claude.md
+
+Second Session (2-3 hours):
+  └─ SETUP.md → Execute Phase 1
+
+Third Session (2-3 hours):
+  └─ CONFIG.md → Execute Phase 2
+
+Fourth Session (3-4 hours):
+  └─ SCRIPTS.md → Execute Phase 3
+
+Fifth Session (4-5 hours):
+  └─ TEMPLATES.md → Execute Phase 4
+
+Sixth Session (3-4 hours):
+  └─ Integration phase (referenced in claude.md)
+
+Seventh Session (2 hours):
+  └─ TESTING.md → Execute Phase 6
+
+Eighth Session (2-3 hours):
+  └─ DEPLOYMENT.md → Execute Phase 7
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✨ WHAT YOU'LL HAVE AFTER COMPLETION:
+
+✅ Working System
+   - Local development instance
+   - Production-ready build
+   - Full-text search
+   - Multi-platform exports
+
+✅ Documentation
+   - 50+ example prompts
+   - Comprehensive guides
+   - Best practices
+   - Integration instructions
+
+✅ Tooling
+   - Validation system
+   - Export pipeline
+   - CI/CD automation
+   - Monitoring setup
+
+✅ Deployment Options
+   - Docker containerization
+   - Netlify integration
+   - Vercel integration
+   - Self-hosted VPS setup
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎓 PHASES EXPLAINED:
+
+Phase 1 (SETUP.md) - Foundation Setup
+  Duration: 2-3 hours
+  Creates: Base Fumadocs project with directory structure
+
+Phase 2 (CONFIG.md) - Configuration
+  Duration: 2-3 hours
+  Creates: Fumadocs config, Next.js setup, validation schemas
+
+Phase 3 (SCRIPTS.md) - Export Pipeline
+  Duration: 3-4 hours
+  Creates: Multi-platform exporters, validation system, CI/CD
+
+Phase 4 (TEMPLATES.md) - Documentation
+  Duration: 4-5 hours
+  Creates: Usage guides, example prompts, templates
+
+Phase 5 - Integration (in claude.md)
+  Duration: 3-4 hours
+  Tests: All systems working together
+
+Phase 6 (TESTING.md) - Testing
+  Duration: 2 hours
+  Validates: All systems with comprehensive tests
+
+Phase 7 (DEPLOYMENT.md) - Production
+  Duration: 2-3 hours
+  Deploys: To production with monitoring
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🔑 KEY FEATURES:
+
+✅ Multi-Platform Exports
+   - Claude (JSON format)
+   - ChatGPT (Custom GPT format)
+   - Raycast (Command presets)
+   - CSV (Spreadsheet import)
+   - Markdown (Documentation)
+
+✅ Built-in Search
+   - Full-text search across all prompts
+   - Tag filtering
+   - Type filtering
+   - Category browsing
+
+✅ Version Control
+   - Git integration
+   - Semantic versioning
+   - Change tracking
+   - Rollback capability
+
+✅ Documentation
+   - Fumadocs framework
+   - MDX support
+   - Beautiful UI
+   - Dark mode included
+
+═══════════════════════════════════════════════════════════════════════════════
+
+⚡ REQUIREMENTS:
+
+✅ Node.js 18+
+✅ npm or yarn
+✅ Git for version control
+✅ ~26 hours available
+✅ Basic Node.js knowledge
+✅ These instruction files
+
+❌ No external APIs needed
+❌ No paid services required
+❌ No complex setup needed
+
+═══════════════════════════════════════════════════════════════════════════════
+
+💡 TIPS FOR SUCCESS:
+
+1. ✅ Read the entire phase guide before starting
+2. ✅ Execute commands exactly as written
+3. ✅ Test after each major step
+4. ✅ Use git to track progress (commit after each phase)
+5. ✅ Keep error messages and logs for debugging
+6. ✅ One phase per session (don't rush)
+7. ✅ Ask for help when stuck (provide full error context)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🚀 NEXT ACTION:
+
+→ Open and read: README.md
+
+This will give you complete understanding of:
+  - What you're building
+  - How to use these files
+  - Expected outcomes
+  - Timeline and pacing
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📞 IF YOU GET STUCK:
+
+1. Read troubleshooting section in the phase guide
+2. Check PROJECT_SUMMARY.md for command reference
+3. Review the "Common Issues" section in the relevant file
+4. Provide full error message if asking for help
+5. Include which phase you're on
+6. Include what command you ran
+7. Include the full error output
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ CHECKLIST BEFORE STARTING:
+
+- [ ] All 9 files are in /mnt/user-data/outputs/
+- [ ] You have Node.js 18+ installed (node --version)
+- [ ] You have npm installed (npm --version)
+- [ ] You have git installed (git --version)
+- [ ] You've read README.md
+- [ ] You've read INDEX.md
+- [ ] You've read claude.md
+- [ ] You have 2-3 hours for Phase 1
+- [ ] You're ready to start SETUP.md
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎉 YOU'RE READY TO START!
+
+Everything you need is in these 9 files.
+
+First Step:
+→ Open and read: README.md
+
+Then:
+→ Follow the phases in order
+→ Execute commands step-by-step
+→ Report status after each phase
+→ Continue to next phase
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Questions? All answers are in the instruction files!
+- Need quick lookup? → PROJECT_SUMMARY.md
+- Need file index? → INDEX.md
+- Need overview? → README.md
+- Need to start? → SETUP.md (Phase 1)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Built for Claude Code execution.
+Ready for immediate implementation.
+Designed for comprehensive AI prompt library system.
+
+Let's build this! 🚀
+
+═══════════════════════════════════════════════════════════════════════════════
