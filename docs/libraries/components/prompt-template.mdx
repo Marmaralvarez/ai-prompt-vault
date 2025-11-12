@@ -1,0 +1,230 @@
+---
+title: Prompt Template
+description: Template showing the complete structure and requirements for creating new prompts
+---
+
+# Prompt Template
+
+This template demonstrates the correct format and required fields for creating new prompts in the AI Prompt Library.
+
+## YAML Frontmatter
+
+All prompts must include YAML frontmatter at the beginning of the file with the following structure:
+
+```yaml
+---
+title: "Your Prompt Title Here"
+description: "A concise description (10-250 characters) of what this prompt does"
+type: "prompt"  # Options: agent, feature, pack, prompt, rule
+slug: "your-prompt-slug"  # lowercase, hyphens only (a-z0-9-)
+status: "published"  # Options: published, draft, deprecated, archived
+version: "1.0.0"  # Semantic versioning (major.minor.patch)
+difficulty: "intermediate"  # Options: beginner, intermediate, advanced
+estimatedTokens: 450  # Approximate tokens for the prompt content
+author:
+  name: "Your Name"
+  email: "your.email@example.com"
+  url: "https://yourwebsite.com"
+tags:
+  - "tag-1"
+  - "tag-2"
+  - "tag-3"
+platforms:
+  - "claude"
+  - "chatgpt"
+created: "2024-01-15"
+lastModified: "2024-01-15"
+relatedPrompts:
+  - "another-prompt-slug"
+  - "related-prompt-slug"
+---
+```
+
+## Content Structure
+
+After the frontmatter, structure your prompt content with clear sections:
+
+### Role/Context
+Define who or what the AI is acting as, and the context for the interaction.
+
+### Task
+Clearly state what the AI should do or accomplish.
+
+### Instructions
+Provide specific guidance, constraints, and quality standards.
+
+### Examples (Optional)
+Include 1-2 examples of expected input and output.
+
+### Output Format
+Specify exactly how the response should be formatted.
+
+## Complete Example
+
+```markdown
+---
+title: "Code Review Expert"
+description: "Comprehensive code review prompt for thorough analysis of code quality, security, and best practices"
+type: "agent"
+slug: "code-review-expert"
+status: "published"
+version: "1.0.0"
+difficulty: "advanced"
+estimatedTokens: 680
+author:
+  name: "Maria Martin"
+  email: "maria@example.com"
+  url: "https://mariamartin.dev"
+tags:
+  - "code-review"
+  - "quality-assurance"
+  - "best-practices"
+  - "security"
+platforms:
+  - "claude"
+  - "chatgpt"
+created: "2024-01-15"
+lastModified: "2024-01-15"
+---
+
+# Code Review Expert
+
+## Role
+You are an expert code reviewer with deep knowledge of multiple programming languages, design patterns, security best practices, and software architecture.
+
+## Task
+Review the provided code and provide comprehensive feedback on:
+- Code quality and readability
+- Potential bugs and edge cases
+- Security vulnerabilities
+- Performance optimizations
+- Design patterns and best practices
+- Testing coverage recommendations
+
+## Instructions
+
+1. **Structure your review** with clear sections for each concern area
+2. **Be constructive** - explain why something could be improved, not just what's wrong
+3. **Cite specific lines** when referencing code
+4. **Provide examples** of how to improve problematic code
+5. **Consider context** - you may ask clarifying questions about the code's purpose
+6. **Prioritize issues** - note which issues are critical vs. nice-to-have
+
+### Quality Standards
+- Focus on substance over style (unless the style causes real issues)
+- Acknowledge good practices and patterns you notice
+- Consider the language's idioms and conventions
+- Evaluate whether the code matches the claimed purpose
+
+## Example Input
+```javascript
+function getData(url) {
+  var result = fetch(url);
+  if (result) {
+    return result.json();
+  }
+}
+```
+
+## Example Output
+
+### Overall Assessment
+The function has critical issues that will cause runtime errors and security vulnerabilities.
+
+### Issues Found
+
+**Critical:**
+- **Line 2**: `fetch()` is async but not awaited. The function will return a Promise, not the parsed data
+- **Security**: No URL validation; susceptible to SSRF attacks
+
+**High:**
+- **Error handling**: No try-catch for network failures or JSON parsing errors
+
+**Medium:**
+- **Variable naming**: `result` should be `response` for clarity
+- **Type safety**: No input validation for the URL parameter
+
+### Recommended Fix
+```javascript
+async function getData(url) {
+  try {
+    if (!isValidUrl(url)) {
+      throw new Error('Invalid URL');
+    }
+    const response = await fetch(url, { timeout: 5000 });
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Failed to fetch data:', error);
+    throw error;
+  }
+}
+
+function isValidUrl(str) {
+  try {
+    return new URL(str).protocol.startsWith('http');
+  } catch {
+    return false;
+  }
+}
+```
+
+## Output Format
+Provide your review in the following structure:
+
+1. **Overall Assessment** - 2-3 sentences summarizing the code's state
+2. **Issues Found** - Organized by severity (Critical, High, Medium, Low)
+3. **Positive Observations** - What the code does well
+4. **Recommended Fixes** - Specific improvements with code examples
+5. **Questions or Suggestions** - Areas where you need more context
+```
+
+## Field Descriptions
+
+| Field | Required | Type | Rules |
+|-------|----------|------|-------|
+| `title` | Yes | String | 5-100 characters |
+| `description` | Yes | String | 10-250 characters |
+| `type` | Yes | Enum | agent, feature, pack, prompt, rule |
+| `slug` | Yes | String | Lowercase, hyphens only, unique |
+| `status` | Yes | Enum | published, draft, deprecated, archived |
+| `version` | Yes | String | Semantic versioning (x.y.z) |
+| `difficulty` | Yes | Enum | beginner, intermediate, advanced |
+| `estimatedTokens` | No | Number | Approximate token count |
+| `author.name` | Yes | String | Author's full name |
+| `author.email` | No | String | Author's email address |
+| `author.url` | No | String | Author's website URL |
+| `tags` | Yes | Array | 2-10 tags, lowercase |
+| `platforms` | No | Array | claude, chatgpt, raycast, etc. |
+| `created` | Yes | String | ISO date (YYYY-MM-DD) |
+| `lastModified` | Yes | String | ISO date (YYYY-MM-DD) |
+| `relatedPrompts` | No | Array | Array of related prompt slugs |
+
+## Tips for Success
+
+- **Be specific**: The more specific your prompt, the better the results
+- **Test thoroughly**: Try your prompt with actual AI models before publishing
+- **Document examples**: Include diverse examples showing expected behavior
+- **Versioning**: Update version when making meaningful changes
+- **Tags**: Use consistent, searchable tags for discoverability
+- **Status**: Use "draft" while developing, "published" when ready
+- **Difficulty**: Consider the prompt's learning curve for end users
+
+## Common Mistakes to Avoid
+
+❌ **Too vague**: "Help me with code" - Not specific enough
+✅ **Better**: "Review this TypeScript code for security vulnerabilities"
+
+❌ **Missing examples**: Users don't know what to expect
+✅ **Better**: Include 1-2 realistic examples of input/output
+
+❌ **Inconsistent formatting**: Difficult to parse
+✅ **Better**: Use clear section headers and consistent structure
+
+❌ **No context**: AI doesn't understand the goal
+✅ **Better**: Explain the role, task, and constraints clearly
+
+❌ **Outdated version**: Hard to track changes
+✅ **Better**: Use semantic versioning (1.0.0, 1.1.0, 2.0.0)

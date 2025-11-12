@@ -46,9 +46,10 @@ export const PromptMetadataSchema = z.object({
     .string()
     .regex(/^\d+\.\d+\.\d+$/, 'Version must be semantic (e.g., 1.0.0)'),
 
-  // Timestamps
-  created: z.string().datetime().optional(),
-  last_updated: z.string().datetime().optional(),
+  // Timestamps (supports both ISO datetime and date-only formats)
+  created: z.string().regex(/^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2}:\d{2}(Z|[+-]\d{2}:\d{2})?)?$/).optional(),
+  last_updated: z.string().regex(/^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2}:\d{2}(Z|[+-]\d{2}:\d{2})?)?$/).optional(),
+  lastModified: z.string().regex(/^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2}:\d{2}(Z|[+-]\d{2}:\d{2})?)?$/).optional(),
 
   // Author information
   author: AuthorSchema,

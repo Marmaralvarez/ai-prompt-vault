@@ -1,28 +1,191 @@
 ---
-title: "AI Prompt Library & Documentation Vault"
-description: "Centralized repository for AI prompts, instructions, and coding standards"
+title: "AI Prompt Library"
+description: "Centralized self-hosted repository for AI prompts, coding standards, and documentation"
 ---
 
-# AI Prompt Library & Documentation Vault
+# AI Prompt Library
 
-Welcome to your self-hosted prompt library. Browse, search, and export AI prompts across all your tools.
+Welcome to the AI Prompt Library – a comprehensive, self-hosted repository of AI prompts, coding standards, and documentation templates.
 
-## Quick Navigation
+## What is This?
 
-- **[Prompts](/docs/prompts)** - Browse the complete prompt library
-- **[Guides](/docs/guides)** - Learn how to use the library
-- **[API](/docs/api)** - Integration and export documentation
+The AI Prompt Library is your centralized source of truth for:
 
-## Latest Additions
+- **AI Prompts** - Reusable prompts for Claude, ChatGPT, and other AI models
+- **Coding Standards** - Organization-wide standards and best practices
+- **Agent Prompts** - Complete autonomous agents for specific tasks
+- **Feature Guides** - How-to documentation and implementation guides
+- **Security Rules** - Security standards and compliance checklists
 
-Check back soon for featured prompts and recent updates.
+All prompts are version-controlled, searchable, and exportable to your preferred platforms.
 
-## Getting Started
+## Quick Start
 
-1. Browse the [Prompts section](/docs/prompts)
-2. Read the [Prompt Anatomy guide](/docs/guides/prompt-anatomy)
-3. Learn about [Platform Integration](/docs/guides/platform-integration)
+- **[Getting Started](/docs/guides/getting-started)** - New here? Learn how to find and use prompts
+- **[Browse Prompts](/docs/prompts/agents)** - Search our library of prompts by category
+- **[Prompt Anatomy](/docs/guides/prompt-anatomy)** - Learn prompt structure and best practices
+- **[Platform Integration](/docs/guides/platform-integration)** - Export to Claude, ChatGPT, Raycast, and more
+
+## Key Features
+
+### 🎯 Multi-Platform Support
+
+Export prompts to your preferred platforms:
+- **Claude** (Web, Projects, API)
+- **ChatGPT** (Web, Custom GPT, API)
+- **Raycast** (Commands and Scripts)
+- **CSV** (Spreadsheets and data tools)
+- **Markdown** (Complete bundles)
+
+### 🏗️ Well-Organized Library
+
+Browse prompts by type:
+
+| Type | Purpose | Example |
+|------|---------|---------|
+| **Agents** | Complete autonomous agents | [Code Review Expert](/docs/prompts/agents/code-review-comprehensive) |
+| **Features** | Feature-specific guidance | [API Documentation Generator](/docs/prompts/features/api-documentation-generator) |
+| **Rules** | Standards and compliance | [TypeScript Standards](/docs/prompts/rules/typescript-standards) |
+| **Packs** | Collections of related prompts | Development stacks, industry packs |
+| **Prompts** | Individual focused prompts | [Refactor for Performance](/docs/prompts/prompts/refactor-for-performance) |
+
+### 🔒 Secure & Self-Hosted
+
+- No external APIs required
+- Full source control with Git
+- Collaborative editing workflow
+- Version history and tracking
+- Community contributions welcome
+
+### 📊 Full-Text Search
+
+Quickly find what you need by:
+- Keyword search across all prompts
+- Filter by type, difficulty, or platform
+- Browse by tags and categories
+- Related prompt suggestions
+
+### 📈 Version Management
+
+- Semantic versioning (major.minor.patch)
+- Changelog tracking
+- Deprecation handling
+- Easy rollback if needed
+
+## Featured Prompts
+
+1. **[Code Review Expert](/docs/prompts/agents/code-review-comprehensive)** - Comprehensive code quality, security, and performance analysis
+2. **[Security Audit Checklist](/docs/prompts/rules/security-audit-checklist)** - OWASP-aligned security and compliance framework
+3. **[TypeScript Standards](/docs/prompts/rules/typescript-standards)** - Organization-wide TypeScript coding standards
+4. **[API Documentation Generator](/docs/prompts/features/api-documentation-generator)** - Auto-generate comprehensive API documentation
+5. **[Refactor for Performance](/docs/prompts/prompts/refactor-for-performance)** - Performance optimization and refactoring guidance
+
+## How It Works
+
+### 1. Find a Prompt
+
+Browse the library by type, difficulty, or search for keywords.
+
+### 2. Use or Customize
+
+Copy the prompt and use it directly, or customize for your specific needs.
+
+### 3. Get Results
+
+Use with your AI model of choice (Claude, ChatGPT, etc.)
+
+### 4. Export & Integrate
+
+Export to your platform or integrate with your workflows.
+
+## Documentation
+
+Learn more about the library and how to use it effectively:
+
+- **[Prompt Anatomy](/docs/guides/prompt-anatomy)** - Understand how to structure effective prompts
+- **[Prompt Template](/docs/libraries/components/prompt-template)** - Complete template with required fields
+- **[Platform Integration](/docs/guides/platform-integration)** - Use prompts with Claude, ChatGPT, Raycast, and APIs
+- **[Tagging Strategy](/docs/guides/tagging-strategy)** - How tags help organize and discover prompts
+- **[Version Management](/docs/guides/version-management)** - Semantic versioning and change tracking
+
+## Export Commands
+
+Export prompts in bulk to your preferred format:
+
+```bash
+# Export all formats
+npm run export:all
+
+# Export specific format
+npm run export:claude     # Claude JSON
+npm run export:chatgpt    # ChatGPT format
+npm run export:raycast    # Raycast commands
+npm run export:csv        # Spreadsheet format
+npm run export:markdown   # Markdown bundle
+```
+
+Exports are saved to `data/exports/` with timestamps.
+
+## Creating New Prompts
+
+Want to contribute? Here's how:
+
+1. Read the [Prompt Template](/docs/libraries/components/prompt-template)
+2. Understand the [Prompt Anatomy](/docs/guides/prompt-anatomy)
+3. Check [Tagging Strategy](/docs/guides/tagging-strategy)
+4. Create your prompt following the YAML frontmatter format
+5. Run `npm run validate` to check
+6. Open a PR for review
+
+## Best Practices
+
+### Before Using a Prompt
+
+- Always test with your AI model first
+- Customize for your specific context
+- Review examples in the prompt
+- Check related prompts for context
+
+### When Creating a Prompt
+
+- Be specific and clear in instructions
+- Provide concrete examples
+- Include expected output format
+- Add relevant tags for discoverability
+- Document any special requirements
+
+## Browse by Category
+
+- **[Agents](/docs/prompts/agents)** - Autonomous AI agents for complex tasks
+- **[Features](/docs/prompts/features)** - Feature-specific guidance and how-tos
+- **[Rules](/docs/prompts/rules)** - Standards, compliance, and best practices
+- **[Packs](/docs/prompts/packs)** - Collections of related prompts
+- **[Individual Prompts](/docs/prompts/prompts)** - Single-purpose, focused prompts
+
+## Need Help?
+
+- **First time?** Start with [Getting Started](/docs/guides/getting-started)
+- **Creating a prompt?** Check [Prompt Template](/docs/libraries/components/prompt-template)
+- **Want to contribute?** See [Contributing](/CONTRIBUTING.md)
+- **Looking for something?** Use the search bar above
+- **Questions?** Check [Troubleshooting](/TROUBLESHOOTING.md)
+
+## Contributing
+
+The AI Prompt Library is a community project. Contributions are welcome!
+
+- Submit new prompts via pull request
+- Suggest improvements to existing prompts
+- Fix errors and improve clarity
+- Add translations and localization
+- Share your use cases and success stories
+
+See [CONTRIBUTING.md](/CONTRIBUTING.md) for guidelines.
+
+## License
+
+This project is open source and available under the MIT License.
 
 ---
 
-*Centralize. Organize. Export. Repeat.*
+**Ready to get started?** [Browse the library](/docs/prompts/agents) or [learn how to use it](/docs/guides/getting-started).
