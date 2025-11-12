@@ -18,10 +18,14 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
+    "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"],
+      "@/tools/*": ["tools/*"],
+      "@/data/*": ["data/*"],
+      "@/schemas/*": ["tools/schemas/*"],
+      "@/exporters/*": ["tools/exporters/*"],
+      "@/scripts/*": ["tools/scripts/*"]
     },
     "incremental": true,
     "plugins": [

@@ -15,7 +15,9 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "migrate": "ts-node tools/scripts/migrate-prompts.ts",
-    "health-check": "ts-node tools/scripts/check-health.ts"
+    "health-check": "ts-node tools/scripts/check-health.ts",
+    "config:test": "ts-node tools/scripts/test-config.ts",
+    "registry:update": "ts-node tools/scripts/update-registry.ts"
   },
   "dependencies": {
     "framer-motion": "^11.0.0",

@@ -1,0 +1,58 @@
+# REQUIRED FIELDS
+title: "Your Prompt Title (5-100 characters)"
+description: "Brief description of what this prompt does (10-250 characters)"
+type: "agent"  # Options: agent, feature, pack, prompt, rule
+slug: "your-prompt-slug"  # Kebab-case, matches filename
+version: "1.0.0"  # Semantic versioning
+
+# AUTHOR INFORMATION
+author:
+  name: "Your Name or Team Name"
+  email: "email@example.com"  # Optional
+  url: "https://your-site.com"  # Optional
+  avatar: "https://url-to-avatar"  # Optional
+
+# CLASSIFICATION
+tags:
+  - "primary-category"  # e.g., security
+  - "secondary-category"  # e.g., auditing
+  - "specific-detail"  # e.g., owasp-top-10
+  # Minimum 2, maximum 10 tags
+
+# OPTIONAL FIELDS
+status: "published"  # Options: published, draft, deprecated, archived
+created: "2025-01-11T00:00:00Z"  # ISO 8601 format
+last_updated: "2025-01-11T12:00:00Z"  # ISO 8601 format
+
+# CATEGORIZATION
+categories:
+  - "Security & Compliance"
+  - "Infrastructure"
+
+use_cases:
+  - "Pre-deployment security review"
+  - "Compliance audit (SOC2, ISO27001)"
+  - "Risk assessment"
+
+# TECHNICAL DETAILS
+model_compatibility:
+  - "claude-opus-4.1"
+  - "claude-sonnet-4.5"
+
+tech_stack:
+  framework: "react-19"
+  database: "postgresql"
+  service: "aws"
+
+# RELATIONSHIPS
+related_prompts:
+  - "security-audit-web"
+  - "compliance-mapping"
+
+# ADDITIONAL METADATA
+difficulty: "advanced"  # Options: beginner, intermediate, advanced
+estimated_tokens: 2500  # Approximate token count
+cost_tier: "high"  # Options: low, medium, high
+platforms:
+  - "claude"
+  - "chatgpt"
