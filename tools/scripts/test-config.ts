@@ -12,7 +12,7 @@ export function testConfiguration(): boolean {
     '.env.local': () => fs.existsSync('.env.local'),
     'data/prompts.json': () => fs.existsSync('data/prompts.json'),
     'tools/schemas/prompt-schema.ts': () => fs.existsSync('tools/schemas/prompt-schema.ts'),
-    'docs/prompts/_meta.ts': () => fs.existsSync('docs/prompts/_meta.ts'),
+    'tools/scripts/update-registry.ts': () => fs.existsSync('tools/scripts/update-registry.ts'),
   }
 
   let allPass = true
