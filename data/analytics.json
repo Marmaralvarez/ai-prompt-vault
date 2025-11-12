@@ -1,0 +1,96 @@
+{
+  "generatedAt": "2025-11-12T16:50:05.932Z",
+  "promptStats": {
+    "total": 5,
+    "byType": {
+      "agent": 1,
+      "feature": 1,
+      "prompt": 1,
+      "rule": 2
+    },
+    "byStatus": {
+      "published": 5
+    },
+    "byDifficulty": {
+      "advanced": 2,
+      "intermediate": 3
+    },
+    "byAuthor": {
+      "Maria Martin": 5
+    },
+    "avgTokens": 874,
+    "totalTokens": 4370,
+    "withTags": 5,
+    "withRelated": 5,
+    "tagsFrequency": {
+      "code-review": 1,
+      "quality-assurance": 1,
+      "best-practices": 2,
+      "security": 2,
+      "performance": 1,
+      "advanced": 2,
+      "documentation": 1,
+      "api-design": 1,
+      "code-quality": 3,
+      "intermediate": 3,
+      "web-development": 1,
+      "backend": 2,
+      "performance-optimization": 1,
+      "refactoring": 1,
+      "vulnerability-testing": 1,
+      "owasp": 1,
+      "compliance": 1,
+      "security-audit": 1,
+      "typescript": 1,
+      "coding-standards": 1,
+      "team-standards": 1
+    }
+  },
+  "topTags": [
+    {
+      "tag": "code-quality",
+      "count": 3
+    },
+    {
+      "tag": "intermediate",
+      "count": 3
+    },
+    {
+      "tag": "best-practices",
+      "count": 2
+    },
+    {
+      "tag": "security",
+      "count": 2
+    },
+    {
+      "tag": "advanced",
+      "count": 2
+    },
+    {
+      "tag": "backend",
+      "count": 2
+    },
+    {
+      "tag": "code-review",
+      "count": 1
+    },
+    {
+      "tag": "quality-assurance",
+      "count": 1
+    },
+    {
+      "tag": "performance",
+      "count": 1
+    },
+    {
+      "tag": "documentation",
+      "count": 1
+    }
+  ],
+  "fileStats": {
+    "totalFiles": 5,
+    "totalSize": 39695,
+    "avgSize": 7939
+  }
+}

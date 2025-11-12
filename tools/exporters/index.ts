@@ -94,11 +94,8 @@ export async function exportAllFormats(
       // Write to file
       fs.writeFileSync(filepath, result.content, 'utf-8')
 
-      // Update result with file path
-      results.push({
-        ...result,
-        content: `Written to: ${filepath}`,
-      })
+      // Keep original content in result, don't replace it
+      results.push(result)
 
       console.log(`✅ Exported to ${format}: ${filename}`)
     } catch (error) {
