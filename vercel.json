@@ -1,8 +1,5 @@
 {
   "version": 2,
-  "env": {
-    "NEXT_PUBLIC_SITE_URL": "@next_public_site_url"
-  },
   "buildCommand": "npm run build",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
