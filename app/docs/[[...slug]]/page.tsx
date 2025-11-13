@@ -14,13 +14,14 @@ export default async function Page({
 
   if (!page) notFound();
 
-  const MDX = page.data.body;
+  const pageData = page.data as any;
+  const MDX = pageData.exports?.default || pageData.body;
 
   return (
-    <DocsPage toc={page.data.toc} full={page.data.full}>
+    <DocsPage toc={pageData.toc} full={pageData.full}>
       <DocsBody>
-        <h1>{page.data.title}</h1>
-        <MDX components={{ ...defaultMdxComponents }} />
+        <h1>{pageData.title}</h1>
+        {MDX && <MDX components={{ ...defaultMdxComponents }} />}
       </DocsBody>
     </DocsPage>
   );
