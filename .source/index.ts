@@ -1,0 +1,20 @@
+// @ts-nocheck -- skip type checking
+import * as d_docs_14 from "../docs/prompts/prompts/refactor-for-performance.md?collection=docs"
+import * as d_docs_13 from "../docs/prompts/rules/typescript-standards.md?collection=docs"
+import * as d_docs_12 from "../docs/prompts/rules/security-audit-checklist.md?collection=docs"
+import * as d_docs_11 from "../docs/prompts/features/api-documentation-generator.md?collection=docs"
+import * as d_docs_10 from "../docs/prompts/agents/code-review-comprehensive.md?collection=docs"
+import * as d_docs_9 from "../docs/libraries/components/prompt-template.mdx?collection=docs"
+import * as d_docs_8 from "../docs/guides/version-management.md?collection=docs"
+import * as d_docs_7 from "../docs/guides/tagging-strategy.md?collection=docs"
+import * as d_docs_6 from "../docs/guides/prompt-submission.md?collection=docs"
+import * as d_docs_5 from "../docs/guides/prompt-anatomy.md?collection=docs"
+import * as d_docs_4 from "../docs/guides/platform-integration.md?collection=docs"
+import * as d_docs_3 from "../docs/guides/local-setup.md?collection=docs"
+import * as d_docs_2 from "../docs/guides/getting-started.md?collection=docs"
+import * as d_docs_1 from "../docs/guides/deployment.md?collection=docs"
+import * as d_docs_0 from "../docs/index.mdx?collection=docs"
+import { _runtime } from "fumadocs-mdx/runtime/next"
+import * as _source from "../source.config"
+export const docs = _runtime.doc<typeof _source.docs>([{ info: {"path":"index.mdx","fullPath":"docs/index.mdx"}, data: d_docs_0 }, { info: {"path":"guides/deployment.md","fullPath":"docs/guides/deployment.md"}, data: d_docs_1 }, { info: {"path":"guides/getting-started.md","fullPath":"docs/guides/getting-started.md"}, data: d_docs_2 }, { info: {"path":"guides/local-setup.md","fullPath":"docs/guides/local-setup.md"}, data: d_docs_3 }, { info: {"path":"guides/platform-integration.md","fullPath":"docs/guides/platform-integration.md"}, data: d_docs_4 }, { info: {"path":"guides/prompt-anatomy.md","fullPath":"docs/guides/prompt-anatomy.md"}, data: d_docs_5 }, { info: {"path":"guides/prompt-submission.md","fullPath":"docs/guides/prompt-submission.md"}, data: d_docs_6 }, { info: {"path":"guides/tagging-strategy.md","fullPath":"docs/guides/tagging-strategy.md"}, data: d_docs_7 }, { info: {"path":"guides/version-management.md","fullPath":"docs/guides/version-management.md"}, data: d_docs_8 }, { info: {"path":"libraries/components/prompt-template.mdx","fullPath":"docs/libraries/components/prompt-template.mdx"}, data: d_docs_9 }, { info: {"path":"prompts/agents/code-review-comprehensive.md","fullPath":"docs/prompts/agents/code-review-comprehensive.md"}, data: d_docs_10 }, { info: {"path":"prompts/features/api-documentation-generator.md","fullPath":"docs/prompts/features/api-documentation-generator.md"}, data: d_docs_11 }, { info: {"path":"prompts/rules/security-audit-checklist.md","fullPath":"docs/prompts/rules/security-audit-checklist.md"}, data: d_docs_12 }, { info: {"path":"prompts/rules/typescript-standards.md","fullPath":"docs/prompts/rules/typescript-standards.md"}, data: d_docs_13 }, { info: {"path":"prompts/prompts/refactor-for-performance.md","fullPath":"docs/prompts/prompts/refactor-for-performance.md"}, data: d_docs_14 }]);
+export const meta = _runtime.meta<typeof _source.meta>([]);

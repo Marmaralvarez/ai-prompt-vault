@@ -1,17 +1,9 @@
-import createMDX from "@next/mdx";
+import { createMDX } from 'fumadocs-mdx/next';
 
-const withMDX = createMDX({
-  extension: /\.mdx?$/,
-  options: {
-    jsx: true,
-    remarkPlugins: [],
-    rehypePlugins: [],
-  },
-});
+const withMDX = createMDX();
 
 const nextConfig = {
   reactStrictMode: true,
-  pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
 
   // Image optimization
   images: {
